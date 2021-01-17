@@ -34,8 +34,8 @@ public class SwaggerConfig {
 	public Docket productApi() {
 		return new Docket(DocumentationType.SWAGGER_2)// new Docket instance
 				.select()// select() will give Docket builder insatnce using docket instance
-				.apis(RequestHandlerSelectors.basePackage("com.rahul.hsc"))// packages to look into it
-				// .paths(PathSelectors.regex("/users/*"))///error will not come in this
+				.apis(RequestHandlerSelectors.basePackage("com.rahul.practice"))// packages to look into it
+				// .paths(PathSelectors.regex("/employees/*"))///error will not come in this
 				.build().apiInfo(userApiInfo()).produces(DEFAULT_PRODUCES_AND_CONSUMES).consumes(DEFAULT_PRODUCES_AND_CONSUMES);
 	}
 
